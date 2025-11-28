@@ -9,39 +9,34 @@
 </head>
 <body>
     
-    <div class="container">
-        <h3>Reserva 🏨</h3>
+    <<div class="reservation-container">
+    <form class="reservation-form">
+        <h2>Faça Sua Reserva</h2>
         
-        <div>
-            <label for="check-in">Data da entrada:</label>
-            <input type="date" id="check-in" required>
-        </div>
-        
-        <div>
-            <label for="check-out">Data da saida</label>
-            <input type="date" id="check-out" required>
+        <div class="form-group">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required>
         </div>
 
-        <p>Preço por Noite: R$ <span id="daily-price">329.00</span></p>
-
-        <div class="summary-box">
-            <h3>Resumo da Reserva</h3>
-            
-            <div class="summary-line">
-                <span>Total de Noites:</span>
-                <span id="total-nights">0</span>
-            </div>
-            
-            <div class="summary-line">
-                <span>Preço Total Estimado:</span>
-                <strong id="total-price">R$ 0.00</strong>
-            </div>
+        <div class="form-group">
+            <label for="checkin-date">Data de Entrada (Check-in):</label>
+            <input type="date" id="checkin-date" name="checkin-date" required>
         </div>
-    </div>
-    
-    <script src="javascript/data1.js"></script>
-</body>
-</html>
+        
+        <div class="form-group">
+            <label for="checkout-date">Data de Saída (Check-out):</label>
+            <input type="date" id="checkout-date" name="checkout-date" required>
+        </div>
+
+        <div class="form-group">
+            <label for="pessoas">Número de Pessoas:</label>
+            <input type="number" id="pessoas" name="pessoas" min="1" required>
+        </div>
+
+        <button type="submit">Confirmar Reserva</button>
+    </form>
+</div>
+</div>
 <h1>Hotel Novakx</h1>
     
 <p>experiencia única e inesquecível</p>
@@ -82,7 +77,29 @@
 
   <!-- Rodapé -->
   <footer>
-    <p>&copy; 2025 Hotel Novakx.</p>
+    <p>&copy; 🏨 Sobre Nós: Hotel Novakx
+Bem-vindo ao Hotel Novakx, seu refúgio de elegância e conforto.
+
+Nossa missão é transformar sua estadia em uma experiência memorável, oferecendo a sofisticação de um serviço cinco estrelas com a calidez de um lar.
+
+O que nos Define:
+Hospitalidade Personalizada: Nossa equipe dedicada antecipa suas necessidades, garantindo uma experiência fluida, relaxante e totalmente focada em você.
+
+Conforto Incomparável: Cada um de nossos espaços é um santuário de tranquilidade, desenhado com design moderno e equipado com comodidades premium para seu total descanso.
+
+Localização Estratégica: (Adicione aqui um breve benefício da sua localização, ex: Estamos perfeitamente localizados com fácil acesso aos centros de negócios e lazer da cidade.)
+
+No Hotel Novakx, não vendemos apenas quartos; criamos o cenário para as suas melhores histórias.
+
+Sua estadia perfeita começa aqui.
+      
+      
+      
+      
+                                                      2025 Hotel Novakx.
+
+
+    </p>
   </footer>
 
 </body>
